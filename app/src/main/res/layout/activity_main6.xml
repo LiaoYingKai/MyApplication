@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main6Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333333"
+        android:gravity="center"
+        android:text="心率分析"
+        android:textColor="#ffffff"
+        android:textSize="80dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="109dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="心率紀錄"
+            android:textSize="35dp" />
+
+        <LinearLayout
+            android:id="@+id/HeartRatePicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:shrinkColumns="1"
+        android:stretchColumns="2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="345dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="目標強度"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:text="強度百分比(轉換心率區間)"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="最高強度"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/highest"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:text="90%-100%()"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="高強度"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/high"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:text="80%-90%()"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="中強度"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/medium"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:text="70%-80%()"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="低強度"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/low"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:text="60%-70%()"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="最低強度"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/lowest"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:text="50%-60%()"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="518dp">
+
+        <Button
+            android:id="@+id/BacktoHomePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回首頁"
+            android:textSize="30dp" />
+    </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
